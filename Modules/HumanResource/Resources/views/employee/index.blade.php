@@ -19,7 +19,9 @@
                 <div class="card-header">
                     <h3 class="card-title">{{ __('humanresource::hr.employee.sub_title') }}</h3>
                     <div class="card-tools">
-                        <button type="button" class="btn btn-danger" onclick="ModalAddEdit(this)" data-cmd="add"
+                        <button 
+                            type="button" 
+                            class="btn btn-danger" onclick="ModalAddEdit(this)" data-cmd="add"
                             data-action="{{ route('employee.store') }}"><i class="fa fa-plus-circle"></i>
                             {{ __('humanresource::hr.employee.btn_create') }}</button>
                     </div>
