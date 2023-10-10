@@ -29,10 +29,10 @@ Route::group(['prefix' => 'app', 'middleware' => ['auth', 'verified', 'role:root
 
         Route::group(['prefix' => 'bussines-partner'], function () {
             Route::group(['prefix' => 'groups'], function () {
-                Route::get('/', 'BussinesPartnerGroupController@index')->name('bp_group.index');
-                Route::post('/store', 'BussinesPartnerGroupController@store')->name('bp_group.store');
-                Route::post('/update', 'BussinesPartnerGroupController@update')->name('bp_group.update');
-                Route::post('/delete', 'BussinesPartnerGroupController@delete')->name('bp_group.delete');
+                Route::get('/', 'BusinessPartnerGroupController@index')->name('bp_group.index');
+                Route::post('/store', 'BusinessPartnerGroupController@store')->name('bp_group.store');
+                Route::post('/update', 'BusinessPartnerGroupController@update')->name('bp_group.update');
+                Route::post('/delete', 'BusinessPartnerGroupController@delete')->name('bp_group.delete');
             });
             Route::group(['prefix' => 'categories'], function () {
                 Route::get('/', 'BussinesPartnerCategoryController@index')->name('bp_category.index');

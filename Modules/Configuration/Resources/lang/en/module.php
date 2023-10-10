@@ -251,7 +251,7 @@ return [
         'modal_delete_title' => "Are you sure?",
         'modal_delete_text' => "Want to delete",
         'modal_delete_btn_text' => "Yes, delete it!",
-    ],  
+    ],
     'identitycard'  => [
         'title' => 'Identity Card',
         'sub_title' => 'All Identity Card',
@@ -273,5 +273,5 @@ return [
         'modal_delete_title' => "Are you sure?",
         'modal_delete_text' => "Want to delete",
         'modal_delete_btn_text' => "Yes, delete it!",
-    ],    
+    ],
 ];

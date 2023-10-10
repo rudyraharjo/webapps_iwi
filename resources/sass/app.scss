@@ -25,7 +25,10 @@ $fa-font-path: "../webfonts";
 
 // Datatables
 @import '~admin-lte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css';
+
 @import '~sweetalert2/src/sweetalert2.scss';
+
+@import '~admin-lte/plugins/bootstrap-switch/css/bootstrap3/bootstrap-switch.min.css';
 
 @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "~@fortawesome/fontawesome-free/scss/regular.scss";

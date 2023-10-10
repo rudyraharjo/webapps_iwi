@@ -1,5 +1,6 @@
 {
     "Configuration": true,
     "BusinessPartner": true,
-    "Sales": true
+    "Sales": true,
+    "HumanResource": true
 }

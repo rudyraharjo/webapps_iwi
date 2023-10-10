@@ -1,0 +1,31 @@
+<?php
+return [
+    'business_partner'  => [
+        'title' => 'Rekan Bisnis',
+        'sub_title' => 'Daftar Rekan Bisnis',
+        'btn_create' => 'Buat Bussines Partner',
+        'table_id' => 'ID',
+        'table_code' => "Kode",
+        'table_name' => "Name",
+        'table_contract' => "Kontrak",
+        'table_address' => "Alamat",
+        'table_created_at' => "Dibuat",
+        'table_tool' => "Aksi",
+        'form_title' => "Form Rekan Bisnis",
+        'form_title_edit' => "Form Ubah data Rekan Bisnis",
+        'form_input_category' => "Kategori",
+        'form_input_old_code' => "Kodel Lama Rekan Bisnis",
+        'form_input_group' => "Grup",
+        'form_input_province' => "Propinsi",
+        'form_input_title' => "Judul",
+        'form_input_code' => "Kode",
+        'form_input_email' => "Email",
+        'form_input_name' => "Customer",
+        'form_btn_save' => "Simpan",
+        'form_btn_update' => "Ubah",
+        'form_btn_cancel' => "Batal",
+        'form_delete_title' => "Apa kamu yakin?",
+        'form_delete_text' => "Ingin menghapus data",
+        'form_delete_btn_text' => "Ya, hapus!",
+    ]
+];

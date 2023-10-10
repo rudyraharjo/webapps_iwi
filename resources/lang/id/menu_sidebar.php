@@ -2,6 +2,11 @@
 
 return [
     'logout' => 'Keluar',
+    'master_data' => "DATA MASTER",
+    'master_data_employee' => "Pekerja",
+    'master_data_jobposition' => "Posisi Pekerjaan",
+    'master_data_customer' => "Pelanggan",
+    'master_data_customer_category' => "Kategori Pelanggan",
     'managment_user' => 'Manajemen Pengguna',
     'managment_user.team' => 'Grup',
     'managment_user.user' => 'Pengguna',
@@ -21,5 +26,5 @@ return [
     'configuration_district' => "Kecamatan",
     'configuration_village' => "Kelurahan",
     'configuration_employee' => "Employees",
-    
+
 ];

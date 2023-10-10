@@ -9,14 +9,14 @@ use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Validator;
 use Yajra\DataTables\DataTables;
 
-use Modules\Configuration\Entities\BussinesPartnerGroup;
+use Modules\Configuration\Entities\BusinessPartnerGroup;
 
-class BussinesPartnerGroupController extends Controller
+class BusinessPartnerGroupController extends Controller
 {
     public function index(Request $request)
     {
         if ($request->ajax()) {
-            return DataTables::of(BussinesPartnerGroup::query())
+            return DataTables::of(BusinessPartnerGroup::query())
                 ->editColumn('created_at', function ($row) {
                     return $row->created_at ? with(new Carbon($row->created_at))->isoFormat('dddd, D MMMM Y') : '';
                 })
@@ -70,7 +70,7 @@ class BussinesPartnerGroupController extends Controller
             ]);
 
         try {
-            $bpGroup = new BussinesPartnerGroup();
+            $bpGroup = new BusinessPartnerGroup();
             $bpGroup->name = ucfirst($request->name);
 
             if ($bpGroup->save()) {
@@ -109,7 +109,7 @@ class BussinesPartnerGroupController extends Controller
         try {
             if (!is_null($request->bp_group_id)) {
 
-                $bpGroup = BussinesPartnerGroup::find($request->bp_group_id);
+                $bpGroup = BusinessPartnerGroup::find($request->bp_group_id);
                 $bpGroup->name = ucfirst($request->name);
 
                 if ($bpGroup->save()) {
@@ -141,8 +141,8 @@ class BussinesPartnerGroupController extends Controller
     {
         try {
             if (!is_null($request->id)) {
-                if (BussinesPartnerGroup::find($request->id)) {
-                    BussinesPartnerGroup::destroy($request->id);
+                if (BusinessPartnerGroup::find($request->id)) {
+                    BusinessPartnerGroup::destroy($request->id);
                     return response()->json([
                         'success'   => true,
                         'message'   => 'succes delete Group Bussines Partner',

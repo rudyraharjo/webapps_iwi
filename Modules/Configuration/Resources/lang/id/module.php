@@ -272,5 +272,5 @@ return [
         'modal_delete_title' => "Apa kamu yakin?",
         'modal_delete_text' => "Ingin menghapus data",
         'modal_delete_btn_text' => "Ya, hapus!",
-    ], 
+    ],
 ];

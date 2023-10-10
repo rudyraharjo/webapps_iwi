@@ -1,19 +1,20 @@
 <?php
 
-namespace Modules\Configuration\Entities;
+namespace Modules\HumanResource\Entities;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class BussinesPartnerGroup extends Model
+class Employee extends Model
 {
     use HasFactory;
-    protected $table = 'c_business_partner_groups';
+
+    protected $table = 'hr_employees';
     protected $primaryKey = 'id';
     protected $fillable = [];
-    
+
     // protected static function newFactory()
     // {
-    //     return \Modules\Configuration\Database\factories\BusinessPartnerGroupFactory::new();
+    //     return \Modules\HumanResource\Database\factories\EmployeeFactory::new();
     // }
 }

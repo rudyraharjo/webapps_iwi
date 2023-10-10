@@ -21,8 +21,8 @@
 
         <!-- Sidebar Menu -->
         <nav class="mt-2">
-            <ul class="nav nav-pills nav-sidebar flex-column nav-legacy" data-widget="treeview"
-                role="menu" data-accordion="false">
+            <ul class="nav nav-pills nav-sidebar flex-column nav-legacy" data-widget="treeview" role="menu"
+                data-accordion="false">
                 <li class="nav-item">
                     <a href="{{ route('dashboard') }}"
                         class="nav-link {{ request()->is('app/dashboard') ? 'active' : '' }}">
@@ -32,77 +32,46 @@
                         </p>
                     </a>
                 </li>
-                {{-- <li class="nav-item">
-                    <a href="javascript;" class="nav-link">
-                        <i class="nav-icon fas fa-people-carry"></i>
-                        <p>
-                            Customers
-                        </p>
-                    </a>
-                </li>
+                <li class="nav-header">{{ __('menu_sidebar.master_data') }}</li>
                 <li class="nav-item">
-                    <a href="javascript;" class="nav-link">
-                        <i class="nav-icon fas fa-user-friends"></i>
+                    <a href="#" class="nav-link {{ request()->is('app/humanresource*') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-users-cog"></i>
                         <p>
-                            Leads
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="javascript;" class="nav-link">
-                        <i class="nav-icon fas fa-people-carry"></i>
-                        <p>
-                            Opportunities
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="javascript;" class="nav-link">
-                        <i class="nav-icon fas fa-quote-right"></i>
-                        <p>
-                            Quotation
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="javascript;" class="nav-link">
-                        <i class="nav-icon fas fa-edit"></i>
-                        <p>
-                            Sales Order
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-ellipsis-v"></i>
-                        <p>
-                            Konfigurasi
+                            human Resource
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview" style="display: none;">
                         <li class="nav-item">
-                            <a href="#" class="nav-link ml-5">
-                                <p>Properties</p>
+                            <a href="{{ route('employee.index') }}" class="nav-link ml-5">
+                                <p>{{ __('menu_sidebar.master_data_employee') }}</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link ml-5">
-                                <p>Dokumen</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link ml-5">
-                                <p>Report</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link ml-5">
-                                <p>Produk</p>
+                            <a href="{{ route('employee.index') }}" class="nav-link ml-5">
+                                <p>{{ __('menu_sidebar.master_data_jobposition') }}</p>
                             </a>
                         </li>
                     </ul>
-                </li> --}}
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('employee.index') }}"
+                        class="nav-link {{ request()->is('app/employee*') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-people-carry"></i>
+                        <p>
+                            {{ __('menu_sidebar.master_data_employee') }}
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('business_partner.index') }}"
+                        class="nav-link {{ request()->is('app/business-partner*') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-people-carry"></i>
+                        <p>
+                            {{ __('menu_sidebar.master_data_customer') }}
+                        </p>
+                    </a>
+                </li>
                 @role('root|administrator')
                     <li class="nav-header">{{ __('menu_sidebar.configuration') }}</li>
                     <li class="nav-item">
@@ -164,8 +133,9 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link {{ request()->is('app/configuration/manage*') ? 'active' : '' }}"">
-                                    <i class="    nav-icon fas fa-users-cog"></i>
+                        <a href="#"
+                            class="nav-link {{ request()->is('app/configuration/manage*') ? 'active' : '' }}"">
+                            <i class="nav-icon fas fa-users-cog"></i>
                             <p>
                                 {{ __('menu_sidebar.managment_user') }}
                                 <i class="right fas fa-angle-left"></i>
@@ -219,8 +189,10 @@
                 @endrole
 
                 <li class="nav-item">
-                    <a href="{{ route('logout') }}" onclick="event.preventDefault();
-                                  document.getElementById('logout-form').submit();" class="nav-link">
+                    <a href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                                  document.getElementById('logout-form').submit();"
+                        class="nav-link">
                         <i class="nav-icon fas fa-sign-out-alt"></i>
                         <p>
                             {{ __('menu_sidebar.logout') }}

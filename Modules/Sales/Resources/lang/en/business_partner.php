@@ -1,0 +1,31 @@
+<?php
+return [
+    'business_partner' => [
+        'title' => 'Bussines Partner',
+        'sub_title' => 'All Bussines Partner',
+        'btn_create' => 'Create New Bussines Partner',
+        'table_id' => 'ID',
+        'table_code' => "Code",
+        'table_name' => "Name",
+        'table_contract' => "Contract",
+        'table_address' => "Address",
+        'table_created_at' => "Created at",
+        'table_tool' => "Tools",
+        'form_title' => "New Bussines Partner Form",
+        'form_title_edit' => "Edit Bussines Partner Form",
+        'form_input_category' => "Category",
+        'form_input_old_code' => "Old Code Bussines Partner",
+        'form_input_group' => "Group",
+        'form_input_province' => "Province",
+        'form_input_title' => "Title",
+        'form_input_code' => "Code",
+        'form_input_email' => "Email",
+        'form_input_name' => "Name",
+        'form_btn_save' => "Save",
+        'form_btn_update' => "Update",
+        'form_btn_cancel' => "Cancel",
+        'form_delete_title' => "Are you sure?",
+        'form_delete_text' => "Want to delete",
+        'form_delete_btn_text' => "Yes, delete it!",
+    ]
+];
